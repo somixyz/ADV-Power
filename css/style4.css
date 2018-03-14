@@ -1,0 +1,156 @@
+@font-face{
+	font-family: quake;
+	src:url("qqq.ttf");
+}
+body,.wrap,#slider,.slide-content{
+ 	font-family: quake;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+}
+	
+.wrap{
+	position: relative;
+}
+.slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.slide1{
+	background-image: url("gallery/image1.jpg");
+}
+
+.slide2{
+	background-image: url("gallery/image2.jpg");
+}
+
+.slide3{
+	background-image: url("gallery/image3.jpg");
+}
+.slide-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.slide-content span{
+	font-size: 5rem;
+	color: #fff;
+}
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+#arrow-left{
+	border-width: 30px 40px 30px 0;
+	border-color:  transparent #fff transparent transparent;
+	left: 0;
+	margin-left: 30px;
+}
+#arrow-right{
+	border-width: 30px 0 30px 40px;
+	border-color:  transparent transparent transparent #fff;
+	right: 0;
+	margin-right: 30px;
+}
+.container {
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li ul li {
+	display: none;
+	background-color: rgba(252,252,252,0.5);
+}
+header{
+	background-color: #000;
+	color: #fff;
+	padding-top: 10px;
+	min-height: 70px;
+	border-bottom: #6b84ad 3px solid;
+
+}
+header h1 {
+	margin-top: 3%;
+	font-size: 50px;
+
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding-top: 20px;
+	margin-right: 1em;
+}
+header nav{
+	font-family: Roboto;
+	float: right;
+}
+header .highlight, header .current a{
+	color: #6b84ad;
+	font-weight: bold;
+}
+header a:hover{
+	background-color: #ccc;
+	color: #000;
+	font-weight: bold;
+	padding: 2px;
+}
+
+ul li:hover ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	color: #000;
+}
+
+/*      -------------   DEO ZA RESPONSIVE -------------- */
+@media(max-width: 1315px){
+	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, #about, #sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}  
+	header{
+		padding-bottom: 20px;
+		white-space: nowrap;
+	}
+	header nav li{
+		display: block;
+	}
+	#showcase h1{
+		display: block;
+	}
+	#showcase h1{
+		margin-top: 170px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
